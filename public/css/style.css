@@ -1,0 +1,276 @@
+*{
+    padding:0;
+    margin:0;
+}
+/*<---Admin style------------>*/
+.sidebar{
+    /*position:;*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 90px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    z-index: 99;
+}
+@media (max-width: 767.98px) {
+    .sidebar {
+        top: 11.5rem;
+        padding: 0;
+    }
+}
+.navbar {
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .1);
+}
+
+@media (min-width: 767.98px) {
+    .navbar {
+        top: 0;
+        position: sticky;
+        z-index: 999;
+    }
+}
+
+.sidebar .nav-link {
+    color: #333;
+}
+
+.sidebar .nav-link.active {
+    color: #0d6efd;
+}
+body{
+    background-color:#9fcdff;
+}
+/*<----- home/welcome style---->*/
+
+.header{
+    color:red;
+    text-align: left;
+}
+h5{
+    color:#fff;
+    font-family: Tahoma sans-serif;
+    font-weight: bold;
+}
+.others{
+    color:#fff;
+    list-style-type: none;
+}
+#welcome{
+    border-radius: 15px;
+}
+.jumbotron{
+    background: #2d3748;
+    border-radius: 10px;
+}
+#jumbotron{
+    color:#fff;
+}
+#button{
+    background-color: transparent;
+
+}
+#move{
+    width: 55%;
+}
+#design{
+    color: #fff;
+    border: 5px;
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.4);
+}
+#red{
+    border-radius: 15px;
+    border-style: unset;
+    box-shadow: 0 5px 8px;
+}
+#red:hover{
+    background-color: #2d3748;
+    cursor: pointer;
+}
+#services{
+    /*background-color:;*/
+    border-radius: 10px;
+}
+
+/*<--------------> navigation style*/
+.my{
+    color:#9fcdff;
+    font-family: sans-serif;
+}
+.blog{
+    color: red;
+    font-family: sans-serif;
+}
+/*---create form style--------------*/
+.feedback{
+    color:#fff;
+}
+.dropdown-item{
+    background: #2d3748;
+    color:#fff;
+}
+a.text{
+    text-decoration: none;
+    cursor:pointer;
+}
+.text{
+    color: #000;
+    list-style-type: none;
+}
+.text:hover{
+    color:black;
+}
+/*<----about/profile------>*/
+#profile{
+    width: 100%;
+    height:100%;
+    color:#fff;
+    border-radius: 5px;
+}
+h2,h6{
+    color:#fff;
+    font-weight: bold;
+}
+.me{
+    color:red;
+    font-family: Tahoma,sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration: underline ;
+
+}
+#my-text {
+    width: 605px;
+    height: 70px;
+    background: red;
+    transition: width 2s;
+    font-family: Gabriola;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+#my-text:hover {
+    width: 300px;
+}
+.about{
+    color:#fff;
+    font-family: tahoma,sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration:underline;
+}
+.line{
+    color: #fff;
+}
+.talk{
+    font-family: Tahoma,sans-serif;
+    font-weight:bold;
+}
+.tech,.project,.data{
+    color: red;
+    font-family: Tahoma,sans-serif;
+    font-weight: bold;
+    line-height: 70%;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-decoration: underline;
+}
+.stack,.bio{
+    color:#fff;
+    font-family: Tahoma,sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    line-height: 70%;
+}
+.img{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.pack{
+    list-style-type: none;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;  /*Remove this if you don't want the 3D effect*/
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: #fff;
+    color: #000;
+    transform: rotateY(180deg);
+    font-family: Elephant,Tahoma;
+}
+.sentence{
+    color:red;
+    font-family: Gabriola;
+    font-weight: bold;
+    font-size: 22px;
+}
+.biodata_list{
+    list-style-type: none;
+
+}
+.biodata{
+    background-color: #002752;
+    border: 15px;
+    padding: 15px;
+    border-radius: 15px;
+}
+.complete{
+    list-style-type: none;
+}
+.next{
+    border-top-style: groove;
+    border-radius: 15px;
+    border: 15px;
+    list-style-type: none;
+    background-color: #040505;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+/*<---------Contact----------->*/
+.give{
+    color:red;
+}
+.text-center_1{
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+
+
